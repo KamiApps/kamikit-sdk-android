@@ -4,3 +4,8 @@ plugins {
     alias(libs.plugins.kotlin.android) apply false
     alias(libs.plugins.kotlin.compose) apply false
 }
+
+allprojects {
+    group = "com.kamiapps.kamikit"
+    version = "1.0.0-dev.1"
+}

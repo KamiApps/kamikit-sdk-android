@@ -2,6 +2,8 @@ plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.kotlin.compose)
+    id("maven-publish")
+
 }
 
 android {
@@ -16,6 +18,7 @@ android {
         versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+
     }
 
     buildTypes {
@@ -37,6 +40,12 @@ android {
     buildFeatures {
         compose = true
     }
+    publishing {
+        singleVariant("release") {
+            withSourcesJar()
+            withJavadocJar()
+        }
+    }
 }
 
 dependencies {
@@ -56,4 +65,42 @@ dependencies {
     androidTestImplementation(libs.androidx.ui.test.junit4)
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
+    implementation(project(":theme"))
+
+}
+
+
+publishing {
+    publications {
+        register<MavenPublication>("release") {
+            groupId = "com.kamiapps.kamikit"
+            artifactId = "theme"
+            version = rootProject.version.toString()
+
+            afterEvaluate {
+                from(components["release"])
+            }
+
+            pom {
+                name.set("Kami Kit Theme")
+                description.set("Tema ve renk sistemi için Kami Kit modülü")
+                url.set("https://github.com/KamiApps/kami-kit-android")
+
+                licenses {
+                    license {
+                        name.set("MIT License")
+                        url.set("https://opensource.org/licenses/MIT")
+                    }
+                }
+
+                developers {
+                    developer {
+                        id.set("kamiapps")
+                        name.set("Kami Apps")
+                        email.set("dev.alprshn@gmail.com")
+                    }
+                }
+            }
+        }
+    }
 }

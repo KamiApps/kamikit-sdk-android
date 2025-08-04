@@ -16,9 +16,13 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
+        maven { url = uri("https://jitpack.io") }
+
     }
 }
 
 rootProject.name = "Kami Kit"
 include(":app")
+include(":core")
+include(":theme")
  

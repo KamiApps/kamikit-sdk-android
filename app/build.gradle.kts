@@ -59,6 +59,7 @@ dependencies {
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
 
-    implementation("com.github.KamiApps.kamikit-sdk-android:core:1.0.0-dev.4")
+    implementation(project(":core"))
+
 
 }

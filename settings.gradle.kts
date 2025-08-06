@@ -21,8 +21,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "Kami Kit"
-include(":app")
-include(":core")
-include(":theme")
- 
+rootProject.name = "kamikit"
+include(":app", ":core")
+

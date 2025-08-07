@@ -14,8 +14,8 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.tooling.preview.Preview
-import com.kamiapps.kamikit.core.theme.KamikitTheme
-import com.kamiapps.kamikit.core.tokens.KamiTokens
+import com.kamiapps.kamikit.core.colors.current
+import com.kamiapps.kamikit.core.theme.KamiTheme
 import com.kamiapps.kamikit.ui.theme.KamiKitTheme
 
 class MainActivity : ComponentActivity() {
@@ -38,14 +38,12 @@ class MainActivity : ComponentActivity() {
 @Composable
 @Preview
 fun AppRoot() {
-    KamikitTheme() { // Varsayılan token setlerini kullanır
         Text(
             text = "Hello KamiKit",
             color = MaterialTheme.colorScheme.primary
         )
         Box(
-            modifier = Modifier.clip(KamiTokens.Shapes.large).background(KamiTokens.LightColors.primary)
+            modifier = Modifier.background(KamiTheme.color.backgroundPrimary)
         )
-    }
 
 }

@@ -4,12 +4,12 @@ import androidx.compose.ui.graphics.Color
 
 object SeparatorColors {
     val opaque = SemanticColor(
-        light = Color(0xFFC6C6C8),
-        dark = Color(0xFF38383A)
+        light = Color(198,198,200,255),
+        dark = Color(56,56,58,255)
     )
 
     val nonOpaque = SemanticColor(
-        light = Color(0xFF3C3C43).copy(alpha = 0.36f),
-        dark = Color(0xFF545458).copy(alpha = 0.65f)
+        light = Color(0, 0, 0, 31),
+        dark = Color(255, 255, 255, 43)
     )
 }

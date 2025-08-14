@@ -1,13 +1,8 @@
 # KamiKit (Android) — Colors
 
-[![KamiKit](https://jitpack.io/v/KamiApps/kamikit-sdk-android.svg)](https://jitpack.io/#KamiApps/kamikit-sdk-android)
-
-![Build status](https://github.com/KamiApps/kamikit-sdk-android/actions/workflows/build.yml/badge.svg)
-
+[![KamiKit Version](https://img.shields.io/badge/KamiKit-v0.1.0-yellow.svg)](https://github.com/KamiApps/kamikit-sdk-android)
 [![JitPack](https://jitpack.io/v/KamiApps/kamikit-sdk-android.svg)](https://jitpack.io/#KamiApps/kamikit-sdk-android)
-
-[![Kotlin Version](https://kotlin-version.aws.icerock.dev/kotlin-version?group=com.kamiapps.kamikit&name=kamikit-sdk-android)](https://kotlinlang.org)
-
+![Kotlin Version](https://img.shields.io/badge/kotlin-2.0.21-purple.svg)
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
 
 **KamiKit Colors**, iOS-semantiğine benzer şekilde tasarlanmış, **light/dark** varyantları olan **semantik renk sistemi** sunar.

@@ -6,48 +6,32 @@ object BackgroundColors {
     // MARK: - Solid Backgrounds
     val primary = SemanticColor(
         light = Color(255,255,255,255),
-        dark = Color(0xFF000000)
+        dark = Color(0,0,0,255)
     )
 
     val secondary = SemanticColor(
-        light = Color(0xFFF2F2F7),
-        dark = Color(0xFF1C1C1E)
+        light = Color(242,242,247,255),
+        dark = Color(28,28,30,255)
     )
 
     val tertiary = SemanticColor(
-        light = Color(0xFFFFFFFF),
-        dark = Color(0xFF2C2C2E)
+        light = Color(255,255,255,255),
+        dark = Color(44,44,46,255)
     )
 
     // MARK: - Elevated Backgrounds (iOS'teki elevated sistem)
     val elevatedPrimary = SemanticColor(
-        light = Color(0xFFFFFFFF),
-        dark = Color(0xFF1C1C1E)
+        light = Color(255,255,255,255),
+        dark = Color(28,28,30,255)
     )
 
     val elevatedSecondary = SemanticColor(
-        light = Color(0xFFF2F2F7),
-        dark = Color(0xFF2C2C2E)
+        light = Color(242,242,247,255),
+        dark = Color(44,44,46,255)
     )
 
     val elevatedTertiary = SemanticColor(
-        light = Color(0xFFFFFFFF),
-        dark = Color(0xFF3A3A3C)
-    )
-
-    // MARK: - Base Backgrounds (iOS'teki base sistem)
-    val basePrimary = SemanticColor(
-        light = Color(0xFFFFFFFF),
-        dark = Color(0xFF000000)
-    )
-
-    val baseSecondary = SemanticColor(
-        light = Color(0xFFF2F2F7),
-        dark = Color(0xFF1C1C1E)
-    )
-
-    val baseTertiary = SemanticColor(
-        light = Color(0xFFFFFFFF),
-        dark = Color(0xFF2C2C2E)
+        light = Color(255,255,255,255),
+        dark = Color(58,28,60,255)
     )
 }

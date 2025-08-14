@@ -44,9 +44,6 @@ class KamiColorSystem(
     val backgroundElevatedSecondary: Color get() = BackgroundColors.elevatedSecondary.resolve(isDark)
     val backgroundElevatedTertiary: Color get() = BackgroundColors.elevatedTertiary.resolve(isDark)
 
-    val backgroundBasePrimary: Color get() = BackgroundColors.basePrimary.resolve(isDark)
-    val backgroundBaseSecondary: Color get() = BackgroundColors.baseSecondary.resolve(isDark)
-    val backgroundBaseTertiary: Color get() = BackgroundColors.baseTertiary.resolve(isDark)
 
     // Grouped Backgrounds
     val backgroundGroupedPrimary: Color get() = GroupedBackgroundColors.primary.resolve(isDark)
@@ -57,9 +54,6 @@ class KamiColorSystem(
     val backgroundGroupedElevatedSecondary: Color get() = GroupedBackgroundColors.elevatedSecondary.resolve(isDark)
     val backgroundGroupedElevatedTertiary: Color get() = GroupedBackgroundColors.elevatedTertiary.resolve(isDark)
 
-    val backgroundGroupedBasePrimary: Color get() = GroupedBackgroundColors.basePrimary.resolve(isDark)
-    val backgroundGroupedBaseSecondary: Color get() = GroupedBackgroundColors.baseSecondary.resolve(isDark)
-    val backgroundGroupedBaseTertiary: Color get() = GroupedBackgroundColors.baseTertiary.resolve(isDark)
 
     // Text Colors
     val textPrimary: Color get() = TextColors.primary.resolve(isDark)

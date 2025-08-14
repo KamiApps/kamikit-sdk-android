@@ -7,6 +7,7 @@ import androidx.activity.enableEdgeToEdge
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.size
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -14,7 +15,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.tooling.preview.Preview
-import com.kamiapps.kamikit.core.colors.current
+import androidx.compose.ui.unit.dp
 import com.kamiapps.kamikit.core.theme.KamiTheme
 import com.kamiapps.kamikit.ui.theme.KamiKitTheme
 
@@ -43,7 +44,7 @@ fun AppRoot() {
             color = MaterialTheme.colorScheme.primary
         )
         Box(
-            modifier = Modifier.background(KamiTheme.color.backgroundPrimary)
+            modifier = Modifier.background(KamiTheme.color.separatorOpaque).size(40.dp)
         )
 
 }

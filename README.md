@@ -42,7 +42,7 @@ repositories {
 
 ```kotlin
 dependencies {
-    implementation("com.github.KamiApps:kamikit-sdk-android:0.1.0-colors")
+    implementation("com.github.KamiApps:kamikit-sdk-android:0.1.0")
 }
 ```
 
@@ -50,7 +50,7 @@ dependencies {
 
 ```groovy
 dependencies {
-    implementation 'com.github.KamiApps:kamikit-sdk-android:0.1.0-colors'
+    implementation 'com.github.KamiApps:kamikit-sdk-android:0.1.0'
 }
 ```
 

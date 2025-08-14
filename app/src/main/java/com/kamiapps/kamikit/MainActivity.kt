@@ -1,5 +1,6 @@
 package com.kamiapps.kamikit
 
+import android.content.res.Configuration
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
@@ -12,7 +13,6 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
@@ -24,27 +24,53 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContent {
-            KamiKitTheme {
-                // Demo içeriği
-                Box(Modifier.fillMaxSize().background(Color.Red)) {
-
-                }
+            KamiKitTheme(
+            ) {
             }
-
         }
+
     }
+}
 }
 
 
 @Composable
-@Preview
-fun AppRoot() {
-        Text(
-            text = "Hello KamiKit",
-            color = MaterialTheme.colorScheme.primary
-        )
-        Box(
-            modifier = Modifier.background(KamiTheme.color.separatorOpaque).size(40.dp)
-        )
+private fun AppRootContent() {
+    Text(text = "Hello KamiKit")
+    Box(
+        modifier = Modifier
+            .size(40.dp)
+            .background(KamiTheme.color.backgroundPrimary) // tema rengi
+    )
+}
 
+@Preview(
+    name = "Dark",
+    uiMode = Configuration.UI_MODE_NIGHT_YES,
+    showBackground = true,
+    backgroundColor = 0xFF000000
+)
+@Composable
+fun AppRootDarkPreview() {
+    // Eğer KamiKitTheme içinde KamiTheme çağrısı yoksa iki kat sarmala:
+    KamiKitTheme(darkTheme = true) {
+        KamiTheme(darkTheme = true) {
+            AppRootContent()
+        }
+    }
+}
+
+@Preview(
+    name = "Light",
+    uiMode = Configuration.UI_MODE_NIGHT_NO,
+    showBackground = true,
+    backgroundColor = 0xFFFFFFFF
+)
+@Composable
+fun AppRootLightPreview() {
+    KamiKitTheme(darkTheme = false) {
+        KamiTheme(darkTheme = false) {
+            AppRootContent()
+        }
+    }
 }

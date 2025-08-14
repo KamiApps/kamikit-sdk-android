@@ -24,13 +24,13 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContent {
-            KamiKitTheme(
-            ) {
+            KamiKitTheme(darkTheme = true) {
+                KamiTheme(darkTheme = true) {
+                    AppRootContent()
+                }
             }
         }
-
     }
-}
 }
 
 

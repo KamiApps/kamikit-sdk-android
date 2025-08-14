@@ -6,106 +6,106 @@ package com.kamiapps.kamikit.core.colors
 import androidx.compose.ui.graphics.Color
 
 object SystemColors {
-    // MARK: - Basic Colors (iOS'teki gibi)
+    // MARK: - Basic Colors (iOS)
     val red = SemanticColor(
-        light = Color(255,56,60,255),
-        dark = Color(255,66,69,255)
+        light = Color(255, 56, 60, 255),
+        dark = Color(255, 66, 69, 255)
     )
 
     val orange = SemanticColor(
-        light = Color(0xFFFF9500),
-        dark = Color(0xFFFF9F0A)
+        light = Color(255, 141, 40, 255),
+        dark = Color(255, 146, 48, 255)
     )
 
     val yellow = SemanticColor(
-        light = Color(0xFFFFCC00),
-        dark = Color(0xFFFFD60A)
+        light = Color(255, 204, 0, 255),
+        dark = Color(255, 214, 0, 255)
     )
 
     val green = SemanticColor(
-        light = Color(0xFF34C759),
-        dark = Color(0xFF32D74B)
+        light = Color(52, 199, 89, 255),
+        dark = Color(48, 209, 88, 255)
     )
 
     val mint = SemanticColor(
-        light = Color(0xFF00C7BE),
-        dark = Color(0xFF63E6E2)
+        light = Color(0, 200, 179, 255),
+        dark = Color(0, 218, 195, 255)
     )
 
     val teal = SemanticColor(
-        light = Color(0xFF30B0C7),
-        dark = Color(0xFF40CBE0)
+        light = Color(0, 195, 208, 255),
+        dark = Color(0, 210, 224, 255)
     )
 
     val cyan = SemanticColor(
-        light = Color(0xFF32ADE6),
-        dark = Color(0xFF64D2FF)
+        light = Color(0, 192, 232, 255),
+        dark = Color(60, 211, 254)
     )
 
     val blue = SemanticColor(
-        light = Color(0xFF007AFF),
-        dark = Color(0xFF0A84FF)
+        light = Color(0, 136, 255, 255),
+        dark = Color(0, 145, 255, 255)
     )
 
     val indigo = SemanticColor(
-        light = Color(0xFF5856D6),
-        dark = Color(0xFF5E5CE6)
+        light = Color(97, 85, 245, 255),
+        dark = Color(107, 93, 255, 255)
     )
 
     val purple = SemanticColor(
-        light = Color(0xFFAF52DE),
-        dark = Color(0xFFBF5AF2)
+        light = Color(203, 48, 224, 255),
+        dark = Color(219, 52, 242, 255)
     )
 
     val pink = SemanticColor(
-        light = Color(0xFFFF2D92),
-        dark = Color(0xFFFF375F)
+        light = Color(255, 45, 85, 255),
+        dark = Color(255, 55, 95, 255)
     )
 
     val brown = SemanticColor(
-        light = Color(0xFFA2845E),
-        dark = Color(0xFFAC8E68)
+        light = Color(172, 127, 94, 255),
+        dark = Color(183, 138, 102, 255)
     )
 
     // MARK: - Gray Scale
     val black = SemanticColor(
-        light = Color(0xFF000000),
-        dark = Color(0xFF000000)
+        light = Color(0, 0, 0, 255),
+        dark = Color(0, 0, 0, 255)
     )
 
     val gray = SemanticColor(
-        light = Color(0xFF8E8E93),
-        dark = Color(0xFF8E8E93)
+        light = Color(142, 142, 147, 255),
+        dark = Color(142, 142, 147, 255)
     )
 
     val gray2 = SemanticColor(
-        light = Color(0xFFAEAEB2),
-        dark = Color(0xFF636366)
+        light = Color(174, 174, 178, 255),
+        dark = Color(99, 99, 102, 255)
     )
 
     val gray3 = SemanticColor(
-        light = Color(0xFFC7C7CC),
-        dark = Color(0xFF48484A)
+        light = Color(199, 199, 204, 255),
+        dark = Color(72, 72, 74, 255)
     )
 
     val gray4 = SemanticColor(
-        light = Color(0xFFD1D1D6),
-        dark = Color(0xFF3A3A3C)
+        light = Color(209, 209, 214, 255),
+        dark = Color(58, 58, 60, 255)
     )
 
     val gray5 = SemanticColor(
-        light = Color(0xFFE5E5EA),
-        dark = Color(0xFF2C2C2E)
+        light = Color(229, 229, 234, 255),
+        dark = Color(44, 44, 46, 255)
     )
 
     val gray6 = SemanticColor(
-        light = Color(0xFFF2F2F7),
-        dark = Color(0xFF1C1C1E)
+        light = Color(242, 242, 247, 255),
+        dark = Color(28, 28, 30, 255)
     )
 
     val white = SemanticColor(
-        light = Color(0xFFFFFFFF),
-        dark = Color(0xFFFFFFFF)
+        light = Color(255, 255, 255, 255),
+        dark = Color(255, 255, 255, 255)
     )
 }
 
